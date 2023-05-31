@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import { createBrowserRouter, createRoutesFromElements, Route, Outlet, RouterProvider } from 'react-router-dom';
+import ContactUs from './contactus-page/ContactUs';
+import Home from './home-page/Home';
+import './styles/App.css';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import ScrollToHashElement from "./ScrollToHashElement";
+
 
 function App() {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path='/' element={<Root />}>
+        <Route index element={<Home />} />
+        <Route path='/contactus' element={<ContactUs />} />
+      </Route>
+    )
+  )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <RouterProvider router={router}/>
+    </div>
+  );
+}
+
+const Root = () => {
+  return (
+    <div>
+      <Header />
+      <ScrollToHashElement />
+      <Outlet />
+      <Footer />
     </div>
   );
 }

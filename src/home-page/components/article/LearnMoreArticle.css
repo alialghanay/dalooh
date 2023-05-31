@@ -1,0 +1,30 @@
+
+#learnmore {
+    background-color: var(--super-dark-color);
+    background-image: url('./01.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.learn-text{
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.learn-text h1{
+   margin-bottom: 1em;
+}
+
+.learn-text p{
+   color: var(--light-color);
+}
+

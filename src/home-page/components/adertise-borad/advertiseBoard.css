@@ -1,0 +1,20 @@
+  /* AdvertiseBoard */
+
+  .AdvertiseBoard {
+    position: relative;
+    height: 100vh;
+    background-color: var(--super-dark-color);
+  }
+
+  #adbackground {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #ad-video {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 75%;
+    height: 82vh;
+  }

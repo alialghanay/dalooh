@@ -1,0 +1,51 @@
+[
+    {
+        "divName": "Product",
+        "divTitle": "product",
+        "className": "dropdown",
+        "contant": [
+            {
+                "title": "Statistic",
+                "id": "/#statistic"
+            },
+            {
+                "title": "Lean More",
+                "id": "/#learnmore"
+            }
+        ]
+    },
+    {
+        "divName": "Tutorial",
+        "divTitle": "tutorial",
+        "className": "dropdown",
+        "contant": [
+            {
+                "title": "See How it Works!",
+                "id": "/#tutorial"
+            },
+            {
+                "title": "What it's Looks Like?",
+                "id": "/#carouesl"
+            }
+        ]
+    },
+    {
+        "divName": "About Us",
+        "divTitle": "aboutus",
+        "className": "dropdown",
+        "contant": [
+            {
+                "title": "Who We Are?",
+                "id": "/#about-us"
+            },
+            {
+                "title": "Partners",
+                "id": "/#partners"
+            },
+            {
+                "title": "Contact Us",
+                "id": "/contactus"
+            }
+        ]
+    }
+]

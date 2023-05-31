@@ -1,0 +1,40 @@
+#tutorial {
+    background-color: var(--main-color);
+    background-image: url('./bk.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#changeVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+#changeVideo p {
+    margin-left: 0.1em;
+    width: 240px;
+    height: 45px;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 0.25rem;
+}
+
+.clicked {
+    background-color: var(--super-dark-color);
+
+}
+
+.unclicked {
+    background-color: var(--light-color);
+}
+
+#t-video {
+    height: 75vh;
+    width: 100%;
+}
