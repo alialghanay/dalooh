@@ -1,38 +1,64 @@
 #partners {
-    background-color: var(--main-color);
-    background-image: url('./aws-cloud.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: 25px solid var(--main-color);
-    height: 75vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  background-color: var(--main-color);
+  background-image: url("./aws-cloud.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 25px solid var(--main-color);
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #partners h1 {
-    padding-top: 5%;
-    color: var(--dark-color);
+  padding-top: 5%;
+  color: var(--dark-color);
 }
 
 .par-components {
-    display: grid;
-    grid-gap: 4rem;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-gap: 4rem;
+  align-items: center;
+  justify-items: center;
 }
 
 .gird-contrler1 {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .gird-contrler2 {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .par-logo {
-    height: 7rem;
-    width: 7rem;
+  height: 7rem;
+  width: 7rem;
+}
+
+/* Small screens (max-width: 600px) */
+
+@media screen and (max-width: 600px) {
+  #partners {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-size: 100%;
+  }
+
+  #partners h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .par-components {
+    grid-gap: 2rem;
+  }
+
+  .par-logo {
+    height: 5rem;
+    width: 5rem;
+  }
 }

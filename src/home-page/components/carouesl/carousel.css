@@ -1,42 +1,30 @@
- /* Default theme */
-/* import '@splidejs/react-splide/css'; */
-
-
-/* or other themes */
-/* import '@splidejs/react-splide/css/skyblue'; */
-/* import '@splidejs/react-splide/css/sea-green'; */
-
-
-/* or only core styles */
-/* import '@splidejs/react-splide/css/core'; */
-
 #carouesl {
-    position: relative;
-    background-color: var(--super-dark-color);
-    height: 150vh;
-    padding-top: 15%;
-    padding-left: 1em;
+  position: relative;
+  background-color: var(--super-dark-color);
+  height: 150vh;
+  padding-top: 15%;
+  padding-left: 1em;
 }
 
 .carImg {
-    height: 100vh;
-    width: 100%;
-    padding-right: 1em;
-    border-radius: 5%;
+  height: 100vh;
+  width: 100%;
+  padding-right: 1em;
+  border-radius: 5%;
 }
 
 .car-svg {
-    position: absolute;
-    height: auto;
-    width: auto;
+  position: absolute;
+  height: auto;
+  width: auto;
 }
 
 #car-svgU {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 
 #car-svgD {
-    right: 0;
-    bottom: 0;
+  right: 0;
+  bottom: 0;
 }
